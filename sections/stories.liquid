@@ -1,0 +1,48 @@
+<!-- implement your code here -->
+
+{% schema %}
+{
+  "name": "Stories",
+  "class": "section-stories",
+  "tag": "div",
+  "blocks": [
+    {
+      "name": "Story",
+      "type": "story",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "placeholder": "title of your story"
+        },
+        {
+          "type": "image_picker",
+          "id": "story_image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "story_link",
+          "label": "Target URL"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Stories",
+      "blocks": [
+        {
+          "type": "story",
+          "settings": {
+            "title": "Shopping Link",
+            "story_link": "https://shopping.google.com/"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
